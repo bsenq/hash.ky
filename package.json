@@ -1,0 +1,54 @@
+{
+  "name": "hash.ky",
+  "description": "🧺 A hashing algorithm focused in javascript data types",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest test --dir \"./test/\"",
+    "bench": "vitest bench --dir \"./bench/\"",
+    "lint": "eslint --ext .ts \"./\"",
+    "format": "eslint --fix --ext .ts \"./\"",
+    "build": "tsc --project \"./\""
+  },
+  "main": "./dist/src/index.js",
+  "types": "./typings/src/index.d.ts",
+  "files": [
+    "./dist/",
+    "./typings/"
+  ],
+  "directories": {
+    "lib": "./dist/src/",
+    "test": "./dist/test/",
+    "bench": "./dist/bench/"
+  },
+  "author": {
+    "name": "theMarzon",
+    "email": "themarzon@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theMarzon/re.bowl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theMarzon/re.bowl/issues"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "node",
+    "bun",
+    "hash"
+  ],
+  "engines": {
+    "node": ">=18.*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "eslint": "^8.32.0",
+    "typescript": "^4.9.4",
+    "vitest": "^0.26.2"
+  }
+}
