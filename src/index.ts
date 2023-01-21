@@ -21,7 +21,7 @@ export default function (value: string | number | symbol | bigint | boolean | un
 
                     ? hashAlgorithm(value.description)
 
-                    : 'NONE'
+                    : 'none'
 
                 : typeof value === 'boolean'
 
@@ -29,9 +29,9 @@ export default function (value: string | number | symbol | bigint | boolean | un
 
                     : typeof value === 'undefined'
 
-                        ? 'NONE'
+                        ? 'none'
 
-                        :  hashAlgorithm(String(value))
+                        :  hashAlgorithm(value.toString())
     }`
         .toUpperCase();
 };
