@@ -1,3 +1,3 @@
 ## Acerca de
 
-Un proyecto creado tras la necesidad de tener un algoritmo de Hashing no criptografico especializado para cada tipo de dato.
+Un proyecto para la creación eficiente de [**hashes**](https://en.wikipedia.org/wiki/Hash_function) no criptográficos.
