@@ -7,27 +7,31 @@ export default function (value: string | number | symbol | bigint | boolean | un
     &&  typeof value !== 'bigint'
     &&  typeof value !== 'symbol'
     &&  typeof value !== 'boolean'
-    &&  typeof value !== 'undefined') throw new Error('Invalid value');
+    &&  typeof value !== 'undefined') throw new Error('Invalid value type');
 
     return `${ typeof value }-${
 
-        typeof value === 'undefined'
+        typeof value === 'string'
 
-            ? 'NONE'
+            ? hashAlgorithm(value)
 
-            : typeof value === 'boolean'
+            : typeof value === 'symbol'
 
-                ? Number(value)
+                ? value.description
 
-                : typeof value === 'symbol'
+                    ? hashAlgorithm(value.description)
 
-                    ? value.description
+                    : 'NONE'
 
-                        ? hashAlgorithm(value.description)
+                : typeof value === 'boolean'
 
-                        : 'NONE'
+                    ? Number(value)
 
-                    : hashAlgorithm(String(value))
+                    : typeof value === 'undefined'
+
+                        ? 'NONE'
+
+                        :  hashAlgorithm(String(value))
     }`
         .toUpperCase();
 };
