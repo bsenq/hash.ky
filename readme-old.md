@@ -8,19 +8,19 @@ Un proyecto para crear [hashes](https://en.wikipedia.org/wiki/Hash_function) no 
 
 ### Procesamiento de Strings
 
-Se retorna un `STRING-XXXXXXXXXXXXXXXX`, las `X` representan un número no mayor a `(2 ^ 53) - 1`.
+Se retorna un `STRING-XXXXXXXXXXXX`, las `X` representan un número no mayor a `(2 ^ 53) - 1`.
 
 ### Procesamiento de Numbers
 
-Se aplica un `.toString()` para luego procesarse como [String]().
+Se aplica un `.toString()` para luego procesarse como [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
 ### Prosesamiento de Symbols
 
-Se procesará como un [String]() si el Symbol contiene una descripción, al contrario, se retornará un `SYMBOL-NONE`.
+Se procesará como un [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings) si el Symbol contiene una descripción, al contrario, se retornará un `SYMBOL-NONE`.
 
 ### Procesamiento de BigInts
 
-Se aplica un `.toString()` para luego procesarse como [String]().
+Se aplica un `.toString()` para luego procesarse como [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
 ### Procesamiento de Booleans
 
