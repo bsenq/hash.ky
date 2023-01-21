@@ -4,32 +4,32 @@ import hasher from '../src/index.js';
 
 describe('Code test', () => {
 
-    bench('Creating a Hash for a String', () => {
+    bench('Creating a hash for a String', () => {
 
         hasher('Hello world');
     });
 
-    bench('Creating a Hash for a Number', () => {
+    bench('Creating a hash for a Number', () => {
 
         hasher(2023);
     });
 
-    bench('Creating a Hash for a BigInt', () => {
+    bench('Creating a hash for a BigInt', () => {
 
-        hasher(2014n);
+        hasher(BigInt(2023));
     });
 
-    bench('Creating a Hash for a Boolean', () => {
+    bench('Creating a hash for a Boolean', () => {
 
         hasher(true);
     });
 
-    bench('Creating a Hash for a Symbol', () => {
+    bench('Creating a hash for a Symbol', () => {
 
         hasher(Symbol('Hello world'));
     });
 
-    bench('Creating a Hash for an Undefined', () => {
+    bench('Creating a hash for an Undefined', () => {
 
         hasher(undefined);
     });

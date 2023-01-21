@@ -4,7 +4,7 @@ import hasher from '../src/index.js';
 
 describe('Code test', () => {
 
-    it('Creating a Hash for a String', () => {
+    it('Creating a hash for a String', () => {
 
         expect(
 
@@ -18,7 +18,7 @@ describe('Code test', () => {
             .toBeTypeOf('string');
     });
 
-    it('Creating a Hash for a Number', () => {
+    it('Creating a hash for a Number', () => {
 
         expect(
 
@@ -32,21 +32,21 @@ describe('Code test', () => {
             .toBeTypeOf('string');
     });
 
-    it('Creating a Hash for a BigInt', () => {
+    it('Creating a hash for a BigInt', () => {
 
         expect(
 
             (
                 () => {
 
-                    return hasher(2014n);
+                    return hasher(BigInt(2023));
                 }
             )()
         )
             .toBeTypeOf('string');
     });
 
-    it('Creating a Hash for a Boolean', () => {
+    it('Creating a hash for a Boolean', () => {
 
         expect(
 
@@ -60,7 +60,7 @@ describe('Code test', () => {
             .toBeTypeOf('string');
     });
 
-    it('Creating a Hash for a Symbol', () => {
+    it('Creating a hash for a Symbol', () => {
 
         expect(
 
@@ -74,7 +74,7 @@ describe('Code test', () => {
             .toBeTypeOf('string');
     });
 
-    it('Creating a Hash for an Undefined', () => {
+    it('Creating a hash for an Undefined', () => {
 
         expect(
 
