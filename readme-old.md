@@ -8,7 +8,7 @@ Un proyecto para crear [hashes](https://en.wikipedia.org/wiki/Hash_function) no 
 
 ### Procesamiento de Strings
 
-Se retorna un `STRING-XXXXXXXXXXXXXXXX`, las `X` representan un número no mayor a `(2 ^ 53) - 1`.
+Se retorna un `STRING-XXXXXXXXXXXX`, las `X` representan un número no mayor a `(2 ^ 53) - 1`.
 
 ### Procesamiento de Numbers
 
