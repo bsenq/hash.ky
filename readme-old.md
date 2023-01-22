@@ -1,31 +1,31 @@
 ## Acerca de
 
-Un proyecto para crear [hashes](https://en.wikipedia.org/wiki/Hash_function) no criptográficos especificos para JavaScript.
+Un proyecto para crear [hashes](https://en.wikipedia.org/wiki/Hash_function) no criptográficos específicos para JavaScript.
 
 ### Algoritmo
 
-> Los siguientes tipos de datos son los soportados, a demás, de explicar como se procesan.
+> Sólo se admiten los siguientes tipos de datos.
 
-### Procesamiento de Strings
+### Procesamiento de un String
 
-Se retorna un `STRING-XXXXXXXXXXXX`, las `X` representan un número no mayor a `(2 ^ 53) - 1`.
+Se retorna un `STRING-000000000000` (el número no es mayor a `(2 ^ 53) - 1`).
 
-### Procesamiento de Numbers
+### Procesamiento de un Number
 
-Se aplica un `.toString()` para luego procesarse como [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
+Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
-### Prosesamiento de Symbols
+### Prosesamiento de un Symbol
 
-Se procesará como un [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings) si el Symbol contiene una descripción, al contrario, se retornará un `SYMBOL-NONE`.
+[Se procesará como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings) si el Symbol contiene una descripción, en caso contrario se retornará un `SYMBOL-NONE`.
 
-### Procesamiento de BigInts
+### Procesamiento de un BigInt
 
-Se aplica un `.toString()` para luego procesarse como [String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
+Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
-### Procesamiento de Booleans
+### Procesamiento de un Boolean
 
-Se retorna un `BOOLEAN-1` si el Boolean es un `true`, al contrario, se retornará o un `BOOLEAN-0`.
+Se retorna un `BOOLEAN-1` si el Boolean es un `true`, en caso contrario se retornará un `BOOLEAN-0`.
 
-### Procesamiento de Undefined
+### Procesamiento de un Undefined
 
 Se retorna un `UNDEFINED-NONE`.
