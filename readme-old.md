@@ -12,15 +12,15 @@ Se retorna un `STRING-000000000000` (el número no es mayor a `(2 ^ 53) - 1`).
 
 #### Procesamiento de un Number
 
-Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
+Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/bsenq/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
 #### Prosesamiento de un Symbol
 
-[Se procesará como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings) si el Symbol contiene una descripción, en caso contrario se retornará un `SYMBOL-NONE`.
+[Se procesará como un String](https://github.com/bsenq/hash.ky/blob/main/readme-old.md#procesamiento-de-strings) si el Symbol contiene una descripción, en caso contrario se retornará un `SYMBOL-NONE`.
 
 #### Procesamiento de un BigInt
 
-Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/theMarzon/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
+Se aplica un `.toString()` y luego [se procesa como un String](https://github.com/bsenq/hash.ky/blob/main/readme-old.md#procesamiento-de-strings).
 
 #### Procesamiento de un Boolean
 
