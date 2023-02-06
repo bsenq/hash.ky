@@ -1,7 +1,7 @@
 {
   "name": "hash.ky",
   "description": "🧺 A hashing algorithm focused on javascript data types",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "test": "vitest test --dir \"./test/\"",
@@ -22,16 +22,16 @@
     "bench": "./dist/bench/"
   },
   "author": {
-    "name": "theMarzon",
-    "email": "themarzon@gmail.com"
+    "name": "bsenq",
+    "email": "the.bsenq@gmail.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/theMarzon/hash.ky.git"
+    "url": "https://github.com/bsenq/hash.ky.git"
   },
   "bugs": {
-    "url": "https://github.com/theMarzon/hash.ky/issues"
+    "url": "https://github.com/bsenq/hash.ky/issues"
   },
   "keywords": [
     "javascript",
